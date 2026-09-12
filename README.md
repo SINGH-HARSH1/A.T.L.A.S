@@ -110,11 +110,12 @@ RECEIVED ──► INTERPRETING ──► PLANNING ──► VALIDATING ──�
 
 A.T.L.A.S. categorizes every tool call into risk-based Action Classes to maintain deterministic boundary enforcement.
 
-Action Class,Risk Level,Examples,Policy Handling
-Read-Only,Low,"Inspect calendar, query document RAG index[cite: 2]",Executes automatically within user RBAC scope[cite: 2].
-Draft-Only,Low-Med,"Draft email reply, prepare meeting invite payload[cite: 2]",Generates draft artifact; no external dispatch[cite: 2].
-Internal Write,Medium,"Log expense record, update internal task status[cite: 2]",Executes under strictly configured policies[cite: 2].
-External Commitment,High,"Send email, book travel, submit payment[cite: 2]",Requires explicit signed Human-in-the-Loop approval token[cite: 2].
+| Action Class | Risk Level | Examples | Policy Handling |
+| :--- | :--- | :--- | :--- |
+| **Read-Only** | Low | Inspect calendar, query document RAG index[cite: 2] | Executes automatically within user RBAC scope[cite: 2]. |
+| **Draft-Only** | Low-Med | Draft email reply, prepare meeting invite payload[cite: 2] | Generates draft artifact; no external dispatch[cite: 2]. |
+| **Internal Write** | Medium | Log expense record, update internal task status[cite: 2] | Executes under strictly configured policies[cite: 2]. |
+| **External Commitment** | High | Send email, book travel, submit payment[cite: 2] | Requires explicit signed Human-in-the-Loop approval token[cite: 2]. |
 
 
 ## 7. Step-by-Step Implementation Roadmap (Phases 0 – 11)
